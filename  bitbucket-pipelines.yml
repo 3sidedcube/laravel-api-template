@@ -1,0 +1,24 @@
+image: 3sidedcube/php:8.1
+
+pipelines:
+  branches:
+    "{feature/*,hotfix/*,develop,main}":
+      - step:
+          name: "Install composer dependencies"
+          caches:
+            - composer
+          script:
+            - "composer self-update"
+            - "composer install"
+            - "cp .env.pipelines .env"
+            - "php artisan key:generate"
+          artifacts:
+            - "vendor/**"
+            - ".env"
+
+      - step:
+          name: "Run the test suite"
+          size: 2x
+          script:
+            - "vendor/bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no"
+            - "vendor/bin/phpunit --verbose"
