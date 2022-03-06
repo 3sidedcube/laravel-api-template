@@ -18,10 +18,15 @@ composer create-project 3sidedcube/laravel-api-template project-name
 ```shell
 php artisan sail:install
 ```
-3. Ensure that the provisioning and deployment information is correct
-4. Create a Backend API confluence page on the project space for writing helpful documentation (remember to update the README)
-5. Replace the :project_name with your project name
-6. Update the environment information below with the correct URLs
+3. Update the `bitbucket-pipelines.yml` file to use any additional services 
+4. Ensure that the provisioning and deployment information is correct
+5. Create a Backend API confluence page on the project space for writing helpful documentation (remember to update the README)
+6. Replace any references to project_name with your project name. You will need to update the following files:
+   1. `composer.json` (name)
+   2. README.md (title)
+   3. Environment variables (`.env`, `.env.example`, `.env.pipelines`)
+   4. OpenAPI (`v1.json`)
+7. Update the environment information below with the correct URLs
 ---
 <!--/delete-->
 
