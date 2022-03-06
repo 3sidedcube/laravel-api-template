@@ -1,0 +1,22 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": ":project_name",
+    "version": "1.0",
+    "contact": {
+      "name": "3 Sided Cube",
+      "url": "https://3sidedcube.com",
+      "email": "server@3sidedcube.com"
+    },
+    "description": "### About\n\nThe Open API documentation for the :project_name API."
+  },
+  "servers": [
+    {
+      "url": ":server_url/v1"
+    }
+  ],
+  "paths": {},
+  "components": {
+    "schemas": {}
+  }
+}
