@@ -26,6 +26,7 @@ php artisan sail:install
    2. README.md (title)
    3. Environment variables (`.env`, `.env.example`, `.env.pipelines`)
    4. OpenAPI (`v1.json`)
+   5. Changelog
 7. Update the environment information below with the correct URLs
 ---
 <!--/delete-->
