@@ -58,8 +58,8 @@ class Handler extends ExceptionHandler
         $this->reportable(new ThrowableReport($this));
         $this->renderable(new AuthenticationExceptionRender());
         $this->renderable(new AuthorizationExceptionRender());
-        $this->renderable(new HttpExceptionRender());
         $this->renderable(new NotFoundHttpExceptionRender());
         $this->renderable(new ValidationExceptionRender());
+        $this->renderable(new HttpExceptionRender());
     }
 }
