@@ -14,7 +14,6 @@
 .phpunit.result.cache
 .DS_Store
 auth.json
-docker-compose.override.yml
 .php-cs-fixer.cache
 Homestead.json
 Homestead.yaml
