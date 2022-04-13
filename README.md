@@ -12,7 +12,7 @@ This repository can be used to scaffold new Laravel APIs. Follow these steps to 
 
 1. Run the following command in your terminal:
 ```shell
-composer create-project 3sidedcube/laravel-api-template project-name
+composer create-project 3sidedcube/laravel-api-template project-name -s dev
 ```
 2. Next configure your Laravel services by running:
 ```shell
