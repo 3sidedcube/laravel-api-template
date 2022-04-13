@@ -17,7 +17,6 @@ use Symfony\Component\Console\Exception\CommandNotFoundException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use ThreeSidedCube\LaravelApiErrors\Exceptions\ApiErrorException;
-use Throwable;
 
 class Handler extends ExceptionHandler
 {
